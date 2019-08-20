@@ -13,4 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/person/{person}', 'PersonController@show');
+Route::apiResource('/person', 'PersonController');
+// defines default routes for index, store, show, update & destroy
