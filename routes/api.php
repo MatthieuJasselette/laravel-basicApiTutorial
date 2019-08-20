@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Person;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +13,4 @@ use App\Person;
 |
 */
 
-Route::get('/person/{person}', function(Person $person){
-  return $person;
-});
+Route::get('/person/{person}', 'PersonController@show');
