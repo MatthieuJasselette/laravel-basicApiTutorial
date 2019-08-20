@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Person;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/person', function(){
-  $person = [
-    'first_name' => 'Howard P.',
-    'last_name' => 'Lovecraft',
-  ];
-
+Route::get('/person/{person}', function(Person $person){
   return $person;
 });
