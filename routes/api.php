@@ -13,3 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/person', function(){
+  $person = [
+    'first_name' => 'Howard P.',
+    'last_name' => 'Lovecraft',
+  ];
+
+  return $person;
+});
