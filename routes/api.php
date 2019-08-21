@@ -13,5 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::apiResource('/person', 'PersonController');
+Route::apiResource('/person', 'Api\v1\PersonController')
+->only(['show', 'destroy', 'store', 'update']);
+
+Route::apiResource('/person', 'Api\v1\PersonController')
+->only('index');
+
 // defines default routes for index, store, show, update & destroy

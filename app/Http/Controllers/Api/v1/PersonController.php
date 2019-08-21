@@ -1,11 +1,13 @@
-<!-- <?php
+<?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\v1;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Person;
 use App\Http\Resources\PersonResource;
 use App\Http\Resources\PersonCollection;
+
 
 class PersonController extends Controller
 {
@@ -46,4 +48,4 @@ class PersonController extends Controller
 
          return response()->json();
      }
-} -->
+}
